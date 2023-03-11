@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Android Dll Injector With Xposed Api by Alex5402</string>
+    <string name="xposed_description">Android dll Injector Xposed based 1.0.1</string>
+</resources>

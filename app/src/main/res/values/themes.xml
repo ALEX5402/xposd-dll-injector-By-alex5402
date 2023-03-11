@@ -1,0 +1,10 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Xposd_dll_injector_By_alex5402" parent="android:Theme.Material.NoActionBar">
+        <!-- Primary brand color. -->
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/black</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

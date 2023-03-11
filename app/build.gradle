@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+
+ext {
+    apiVersion = '82'  //exposed api version
+}
+android {
+    namespace 'com.xposed.opensource'
+    compileSdk 33
+    packagingOptions {
+        // Exclude file to avoid
+        // Error: Duplicate files during packaging of APK
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'META-INF/*.kotlin_module'
+    }
+    defaultConfig {
+        applicationId "com.xposed.opensource"
+        minSdk 21
+        targetSdk 33
+        versionCode 3
+        versionName "1.1.0"
+        ndk {
+            abiFilters 'arm64-v8a' , 'armeabi-v7a'
+        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_10
+        targetCompatibility JavaVersion.VERSION_1_10
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/cpp/Android.mk'
+        }
+        ndkVersion = "24.0.8215888"
+    }
+}
+
+dependencies {
+    implementation "de.robv.android.xposed:api:$apiVersion"
+/*
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    */
+
+}

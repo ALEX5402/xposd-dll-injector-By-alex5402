@@ -1,0 +1,2 @@
+rootProject.name = "xposd_dll_injector_By_alex5402"
+include ':app'

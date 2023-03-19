@@ -49,7 +49,7 @@ SOFTWARE.
 # To make it work
  
 
- open eith any dex explorer
+ open with any dex explorer
  and delete de.robv.android.xposed this packages
  to make module work .
 

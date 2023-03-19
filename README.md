@@ -57,7 +57,7 @@ SOFTWARE.
 ## Setup
 
 - Install Android Studio 
-- and optn this project
+- and open this project
 ## 🚀 About Me
 I'm simple android devloper 
 

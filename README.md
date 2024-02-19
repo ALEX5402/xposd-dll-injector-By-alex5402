@@ -1,4 +1,3 @@
-
 ## Dll Injector Android Xposed
 
 its a interesting tool to inject .so files in any android apk runtime with help of Xposed api 

@@ -15,6 +15,7 @@ public class XposedLogic implements IXposedHookLoadPackage {
         public void handleLoadPackage(final XC_LoadPackage.LoadPackageParam lpparam) {
            if(lpparam.packageName.equals("com.innersloth.spacemafia")){
                try{
+                       // add your lib here
 
                    System.loadLibrary("example"); // injection done
                    XposedBridge.log("injection done");

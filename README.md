@@ -1,7 +1,7 @@
 
 ## Dll Injector Android Xposed
 
-its a intresting tool to inject .so files in any anroid apk runtime with help of Xposed api 
+its a interesting tool to inject .so files in any android apk runtime with help of Xposed api 
 
 
 ## Version
@@ -42,7 +42,7 @@ SOFTWARE.
 
 - no need to reboot after install module
 - just flash and forgot
-- 100% unditectable
+- 100% undetectable
 - All android version working ...
 
 
@@ -59,7 +59,7 @@ SOFTWARE.
 - Install Android Studio 
 - and open this project
 ## 🚀 About Me
-I'm simple android devloper 
+I'm simple android developer 
 
 
 ## Feedback

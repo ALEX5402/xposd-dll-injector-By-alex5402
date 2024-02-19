@@ -49,12 +49,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_10
         targetCompatibility JavaVersion.VERSION_1_10
     }
-    externalNativeBuild {
-        ndkBuild {
-            path 'src/main/cpp/Android.mk'
-        }
-        ndkVersion = "24.0.8215888"
-    }
+
 }
 
 dependencies {

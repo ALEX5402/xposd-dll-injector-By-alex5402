@@ -58,7 +58,7 @@ SOFTWARE.
 - Install Android Studio 
 - and open this project
 ## 🚀 About Me
-I'm simple android developer 
+Just a simple android developer 
 
 
 ## Feedback
